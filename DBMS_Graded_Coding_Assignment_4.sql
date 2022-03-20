@@ -1,5 +1,24 @@
 Notes - gca4 denotes the database name
-
+1. 
+CREATE TABLE passenger (
+  PASSENGER_NAME varchar(45) DEFAULT NULL,
+  CATEGORY varchar(45) DEFAULT NULL,
+  GENDER varchar(45) DEFAULT NULL,
+  BOARDING_CITY varchar(45) DEFAULT NULL,
+  DESTINATION_CITY varchar(45) DEFAULT NULL,
+  DISTANCE int DEFAULT NULL,
+  BUS_TYPE varchar(45) DEFAULT NULL,
+  ID int NOT NULL,
+  PRIMARY KEY (ID)
+) 
+2. 
+CREATE TABLE price (
+  ID int NOT NULL,
+  BUS_TYPE varchar(45) DEFAULT NULL,
+  DISTANCE int DEFAULT NULL,
+  PRICE int DEFAULT NULL,
+  PRIMARY KEY (ID)
+) 
 3. 
 select gender, count(*) from gca4.passenger where distance >=600
 group by gender;
